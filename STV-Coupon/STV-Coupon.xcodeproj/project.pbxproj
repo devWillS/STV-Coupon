@@ -20,6 +20,8 @@
 		8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5872335C35A006624A8 /* CouponEntityDao.swift */; };
 		8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E58A2335C38D006624A8 /* CouponEntity.swift */; };
 		889EDB262335E39D00A06F9A /* CouponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EDB252335E39D00A06F9A /* CouponData.swift */; };
+		889EDB292335EC2B00A06F9A /* CouponDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889EDB282335EC2B00A06F9A /* CouponDetail.storyboard */; };
+		889EDB2B2335EC4900A06F9A /* CouponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EDB2A2335EC4900A06F9A /* CouponDetailViewController.swift */; };
 		88A055F52335CAA1006276DB /* CouponListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055F42335CAA1006276DB /* CouponListProvider.swift */; };
 		88A055F82335CBFA006276DB /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055F62335CBFA006276DB /* CouponCell.swift */; };
 		88A055F92335CBFA006276DB /* CouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A055F72335CBFA006276DB /* CouponCell.xib */; };
@@ -42,6 +44,7 @@
 		88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9F2335AFEE00A67518 /* RealmSwift.framework */; };
 		88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85AA02335AFEE00A67518 /* Alamofire.framework */; };
 		88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */; };
+		88B63BD92336018300B8FFC0 /* UIColor+Original.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B63BD82336018300B8FFC0 /* UIColor+Original.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +74,8 @@
 		8809E5872335C35A006624A8 /* CouponEntityDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntityDao.swift; sourceTree = "<group>"; };
 		8809E58A2335C38D006624A8 /* CouponEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntity.swift; sourceTree = "<group>"; };
 		889EDB252335E39D00A06F9A /* CouponData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponData.swift; sourceTree = "<group>"; };
+		889EDB282335EC2B00A06F9A /* CouponDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CouponDetail.storyboard; sourceTree = "<group>"; };
+		889EDB2A2335EC4900A06F9A /* CouponDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailViewController.swift; sourceTree = "<group>"; };
 		88A055F42335CAA1006276DB /* CouponListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListProvider.swift; sourceTree = "<group>"; };
 		88A055F62335CBFA006276DB /* CouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCell.swift; sourceTree = "<group>"; };
 		88A055F72335CBFA006276DB /* CouponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponCell.xib; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		88A85A9F2335AFEE00A67518 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		88A85AA02335AFEE00A67518 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
+		88B63BD82336018300B8FFC0 /* UIColor+Original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Original.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,15 @@
 			path = Coupon;
 			sourceTree = "<group>";
 		};
+		889EDB272335EC1400A06F9A /* CouponDetail */ = {
+			isa = PBXGroup;
+			children = (
+				889EDB282335EC2B00A06F9A /* CouponDetail.storyboard */,
+				889EDB2A2335EC4900A06F9A /* CouponDetailViewController.swift */,
+			);
+			path = CouponDetail;
+			sourceTree = "<group>";
+		};
 		88A055F22335CA77006276DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +226,7 @@
 				88A056062335D703006276DB /* UICollectionView+DequeueReusable.swift */,
 				88A056082335D958006276DB /* UICollectionReusableView+Identifier.swift */,
 				88A0560A2335D9E1006276DB /* UICollectionView+Registable.swift */,
+				88B63BD82336018300B8FFC0 /* UIColor+Original.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -270,6 +286,7 @@
 		88A85A952335AEEE00A67518 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				889EDB272335EC1400A06F9A /* CouponDetail */,
 				88A85A972335AF1A00A67518 /* CoupnList */,
 				88A85A962335AF1000A67518 /* Launch */,
 			);
@@ -380,6 +397,7 @@
 				88A055F92335CBFA006276DB /* CouponCell.xib in Resources */,
 				88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */,
 				88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */,
+				889EDB292335EC2B00A06F9A /* CouponDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 				8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */,
 				88A056072335D703006276DB /* UICollectionView+DequeueReusable.swift in Sources */,
 				8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */,
+				88B63BD92336018300B8FFC0 /* UIColor+Original.swift in Sources */,
 				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
 				8809E5622335B34D006624A8 /* Result.swift in Sources */,
 				88A055FC2335CC40006276DB /* UICollectionViewCell+Identifier.swift in Sources */,
@@ -434,6 +453,7 @@
 				88A056092335D958006276DB /* UICollectionReusableView+Identifier.swift in Sources */,
 				88A0560B2335D9E1006276DB /* UICollectionView+Registable.swift in Sources */,
 				8809E55E2335B247006624A8 /* APIClient.swift in Sources */,
+				889EDB2B2335EC4900A06F9A /* CouponDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

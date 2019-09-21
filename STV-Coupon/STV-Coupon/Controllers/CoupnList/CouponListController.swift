@@ -28,6 +28,10 @@ class CouponListController{
         }
     }
     
+    func getCouponList() -> [CouponData] {
+        return CouponEntityDao.findAll()
+    }
+    
     private func save(data: Data) {
         let decoder = JSONDecoder()
         guard let couponResult: CouponResult = try? decoder.decode(CouponResult.self, from: data) else {
