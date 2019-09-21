@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A822335ADC400A67518 /* AppDelegate.swift */; };
+		88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A892335ADCA00A67518 /* Assets.xcassets */; };
+		88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */; };
+		88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A982335AF3B00A67518 /* CouponList.storyboard */; };
+		88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A9A2335AF5600A67518 /* CouponListViewController.swift */; };
+		88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9E2335AFEE00A67518 /* Realm.framework */; };
+		88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9F2335AFEE00A67518 /* RealmSwift.framework */; };
+		88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85AA02335AFEE00A67518 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88A85A7F2335ADC400A67518 /* STV-Coupon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STV-Coupon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A85A822335ADC400A67518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88A85A892335ADCA00A67518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88A85A8C2335ADCA00A67518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88A85A8E2335ADCA00A67518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A85A982335AF3B00A67518 /* CouponList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CouponList.storyboard; sourceTree = "<group>"; };
+		88A85A9A2335AF5600A67518 /* CouponListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListViewController.swift; sourceTree = "<group>"; };
+		88A85A9E2335AFEE00A67518 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		88A85A9F2335AFEE00A67518 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		88A85AA02335AFEE00A67518 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88A85A7C2335ADC400A67518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */,
+				88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */,
+				88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88A85A762335ADC400A67518 = {
+			isa = PBXGroup;
+			children = (
+				88A85A812335ADC400A67518 /* STV-Coupon */,
+				88A85A802335ADC400A67518 /* Products */,
+				88A85A9D2335AFEE00A67518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88A85A802335ADC400A67518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A7F2335ADC400A67518 /* STV-Coupon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A85A812335ADC400A67518 /* STV-Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A952335AEEE00A67518 /* Controllers */,
+				88A85A942335AED600A67518 /* Others */,
+			);
+			path = "STV-Coupon";
+			sourceTree = "<group>";
+		};
+		88A85A942335AED600A67518 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A822335ADC400A67518 /* AppDelegate.swift */,
+				88A85A892335ADCA00A67518 /* Assets.xcassets */,
+				88A85A8E2335ADCA00A67518 /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		88A85A952335AEEE00A67518 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A972335AF1A00A67518 /* CoupnList */,
+				88A85A962335AF1000A67518 /* Launch */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88A85A962335AF1000A67518 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		88A85A972335AF1A00A67518 /* CoupnList */ = {
+			isa = PBXGroup;
+			children = (
+				88A85A982335AF3B00A67518 /* CouponList.storyboard */,
+				88A85A9A2335AF5600A67518 /* CouponListViewController.swift */,
+			);
+			path = CoupnList;
+			sourceTree = "<group>";
+		};
+		88A85A9D2335AFEE00A67518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88A85AA02335AFEE00A67518 /* Alamofire.framework */,
+				88A85A9E2335AFEE00A67518 /* Realm.framework */,
+				88A85A9F2335AFEE00A67518 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88A85A7E2335ADC400A67518 /* STV-Coupon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A85A912335ADCA00A67518 /* Build configuration list for PBXNativeTarget "STV-Coupon" */;
+			buildPhases = (
+				88A85A7B2335ADC400A67518 /* Sources */,
+				88A85A7C2335ADC400A67518 /* Frameworks */,
+				88A85A7D2335ADC400A67518 /* Resources */,
+				88A85A9C2335AFA000A67518 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STV-Coupon";
+			productName = "STVクーポン";
+			productReference = 88A85A7F2335ADC400A67518 /* STV-Coupon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88A85A772335ADC400A67518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = devWill;
+				TargetAttributes = {
+					88A85A7E2335ADC400A67518 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 88A85A7A2335ADC400A67518 /* Build configuration list for PBXProject "STV-Coupon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88A85A762335ADC400A67518;
+			productRefGroup = 88A85A802335ADC400A67518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88A85A7E2335ADC400A67518 /* STV-Coupon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88A85A7D2335ADC400A67518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */,
+				88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */,
+				88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88A85A9C2335AFA000A67518 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88A85A7B2335ADC400A67518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
+				88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88A85A8C2335ADCA00A67518 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88A85A8F2335ADCA00A67518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88A85A902335ADCA00A67518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88A85A922335ADCA00A67518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36JLDND2KY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/STV-Coupon/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.devwill.STV-Coupon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88A85A932335ADCA00A67518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36JLDND2KY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/STV-Coupon/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.devwill.STV-Coupon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88A85A7A2335ADC400A67518 /* Build configuration list for PBXProject "STV-Coupon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A85A8F2335ADCA00A67518 /* Debug */,
+				88A85A902335ADCA00A67518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A85A912335ADCA00A67518 /* Build configuration list for PBXNativeTarget "STV-Coupon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A85A922335ADCA00A67518 /* Debug */,
+				88A85A932335ADCA00A67518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88A85A772335ADC400A67518 /* Project object */;
+}
