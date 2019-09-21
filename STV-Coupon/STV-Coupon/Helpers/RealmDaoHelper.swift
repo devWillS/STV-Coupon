@@ -65,7 +65,7 @@ final class RealmDaoHelper <T: RealmSwift.Object> {
     func add(object :T) {
         do {
             try realm.write {
-                realm.add(object, update: .all)
+                realm.add(object, update: .error)
             }
         } catch let error {
             print(error.localizedDescription)
@@ -78,7 +78,7 @@ final class RealmDaoHelper <T: RealmSwift.Object> {
     func add(objects: [T]) {
         do {
             try realm.write {
-                realm.add(objects, update: .all)
+                realm.add(objects, update: .error)
             }
         } catch let error {
             print(error.localizedDescription)

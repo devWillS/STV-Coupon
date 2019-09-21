@@ -19,6 +19,20 @@
 		8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */; };
 		8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5872335C35A006624A8 /* CouponEntityDao.swift */; };
 		8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E58A2335C38D006624A8 /* CouponEntity.swift */; };
+		889EDB262335E39D00A06F9A /* CouponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EDB252335E39D00A06F9A /* CouponData.swift */; };
+		88A055F52335CAA1006276DB /* CouponListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055F42335CAA1006276DB /* CouponListProvider.swift */; };
+		88A055F82335CBFA006276DB /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055F62335CBFA006276DB /* CouponCell.swift */; };
+		88A055F92335CBFA006276DB /* CouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A055F72335CBFA006276DB /* CouponCell.xib */; };
+		88A055FC2335CC40006276DB /* UICollectionViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055FB2335CC40006276DB /* UICollectionViewCell+Identifier.swift */; };
+		88A055FE2335D1E4006276DB /* Int+CommaSepareted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055FD2335D1E4006276DB /* Int+CommaSepareted.swift */; };
+		88A056002335D3F6006276DB /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A055FF2335D3F6006276DB /* Date+toString.swift */; };
+		88A056032335D4E7006276DB /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A056022335D4E7006276DB /* DateFormatter.swift */; };
+		88A056052335D534006276DB /* String+toDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A056042335D534006276DB /* String+toDate.swift */; };
+		88A056072335D703006276DB /* UICollectionView+DequeueReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A056062335D703006276DB /* UICollectionView+DequeueReusable.swift */; };
+		88A056092335D958006276DB /* UICollectionReusableView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A056082335D958006276DB /* UICollectionReusableView+Identifier.swift */; };
+		88A0560B2335D9E1006276DB /* UICollectionView+Registable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0560A2335D9E1006276DB /* UICollectionView+Registable.swift */; };
+		88A615032335C89300B55279 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88A615022335C89300B55279 /* Localizable.strings */; };
+		88A615052335C8D300B55279 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A615042335C8D300B55279 /* String+Localize.swift */; };
 		88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A822335ADC400A67518 /* AppDelegate.swift */; };
 		88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A892335ADCA00A67518 /* Assets.xcassets */; };
 		88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */; };
@@ -56,7 +70,21 @@
 		8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		8809E5872335C35A006624A8 /* CouponEntityDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntityDao.swift; sourceTree = "<group>"; };
 		8809E58A2335C38D006624A8 /* CouponEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntity.swift; sourceTree = "<group>"; };
-		88A85A7F2335ADC400A67518 /* STV-Coupon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STV-Coupon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		889EDB252335E39D00A06F9A /* CouponData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponData.swift; sourceTree = "<group>"; };
+		88A055F42335CAA1006276DB /* CouponListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListProvider.swift; sourceTree = "<group>"; };
+		88A055F62335CBFA006276DB /* CouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCell.swift; sourceTree = "<group>"; };
+		88A055F72335CBFA006276DB /* CouponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponCell.xib; sourceTree = "<group>"; };
+		88A055FB2335CC40006276DB /* UICollectionViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		88A055FD2335D1E4006276DB /* Int+CommaSepareted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommaSepareted.swift"; sourceTree = "<group>"; };
+		88A055FF2335D3F6006276DB /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
+		88A056022335D4E7006276DB /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		88A056042335D534006276DB /* String+toDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+toDate.swift"; sourceTree = "<group>"; };
+		88A056062335D703006276DB /* UICollectionView+DequeueReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+DequeueReusable.swift"; sourceTree = "<group>"; };
+		88A056082335D958006276DB /* UICollectionReusableView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Identifier.swift"; sourceTree = "<group>"; };
+		88A0560A2335D9E1006276DB /* UICollectionView+Registable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registable.swift"; sourceTree = "<group>"; };
+		88A615022335C89300B55279 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		88A615042335C8D300B55279 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		88A85A7F2335ADC400A67518 /* STVクーポン.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STVクーポン.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A85A822335ADC400A67518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A85A892335ADCA00A67518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A85A8C2335ADCA00A67518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,9 +116,9 @@
 		8809E55C2335B239006624A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				889EDB242335E38700A06F9A /* Coupon */,
 				8809E5862335C336006624A8 /* Dao */,
 				8809E55F2335B31E006624A8 /* API */,
-				8809E5602335B330006624A8 /* Coupon */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +126,7 @@
 		8809E55F2335B31E006624A8 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				8809E5602335B330006624A8 /* Coupon */,
 				8809E55D2335B247006624A8 /* APIClient.swift */,
 			);
 			path = API;
@@ -115,6 +144,7 @@
 		8809E5822335BFDB006624A8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				88A055FA2335CC24006276DB /* UIKit */,
 				8809E5832335BFE3006624A8 /* Foundation */,
 			);
 			path = Extensions;
@@ -124,6 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */,
+				88A615042335C8D300B55279 /* String+Localize.swift */,
+				88A055FD2335D1E4006276DB /* Int+CommaSepareted.swift */,
+				88A055FF2335D3F6006276DB /* Date+toString.swift */,
+				88A056042335D534006276DB /* String+toDate.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -144,6 +178,51 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		889EDB242335E38700A06F9A /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				889EDB252335E39D00A06F9A /* CouponData.swift */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		88A055F22335CA77006276DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88A055F32335CA83006276DB /* CouponList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88A055F32335CA83006276DB /* CouponList */ = {
+			isa = PBXGroup;
+			children = (
+				88A055F42335CAA1006276DB /* CouponListProvider.swift */,
+				88A055F62335CBFA006276DB /* CouponCell.swift */,
+				88A055F72335CBFA006276DB /* CouponCell.xib */,
+			);
+			path = CouponList;
+			sourceTree = "<group>";
+		};
+		88A055FA2335CC24006276DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				88A055FB2335CC40006276DB /* UICollectionViewCell+Identifier.swift */,
+				88A056062335D703006276DB /* UICollectionView+DequeueReusable.swift */,
+				88A056082335D958006276DB /* UICollectionReusableView+Identifier.swift */,
+				88A0560A2335D9E1006276DB /* UICollectionView+Registable.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		88A056012335D4D0006276DB /* Enumerates */ = {
+			isa = PBXGroup;
+			children = (
+				88A056022335D4E7006276DB /* DateFormatter.swift */,
+			);
+			path = Enumerates;
+			sourceTree = "<group>";
+		};
 		88A85A762335ADC400A67518 = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +235,7 @@
 		88A85A802335ADC400A67518 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88A85A7F2335ADC400A67518 /* STV-Coupon.app */,
+				88A85A7F2335ADC400A67518 /* STVクーポン.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +243,8 @@
 		88A85A812335ADC400A67518 /* STV-Coupon */ = {
 			isa = PBXGroup;
 			children = (
+				88A056012335D4D0006276DB /* Enumerates */,
+				88A055F22335CA77006276DB /* Views */,
 				8809E5892335C375006624A8 /* Entities */,
 				88A85A952335AEEE00A67518 /* Controllers */,
 				8809E5822335BFDB006624A8 /* Extensions */,
@@ -181,6 +262,7 @@
 				88A85A892335ADCA00A67518 /* Assets.xcassets */,
 				8809E5802335BEC9006624A8 /* Color.xcassets */,
 				88A85A8E2335ADCA00A67518 /* Info.plist */,
+				88A615022335C89300B55279 /* Localizable.strings */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -251,7 +333,7 @@
 			);
 			name = "STV-Coupon";
 			productName = "STVクーポン";
-			productReference = 88A85A7F2335ADC400A67518 /* STV-Coupon.app */;
+			productReference = 88A85A7F2335ADC400A67518 /* STVクーポン.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,8 +374,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A615032335C89300B55279 /* Localizable.strings in Resources */,
 				88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */,
 				8809E5812335BEC9006624A8 /* Color.xcassets in Resources */,
+				88A055F92335CBFA006276DB /* CouponCell.xib in Resources */,
 				88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */,
 				88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */,
 			);
@@ -328,15 +412,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A056032335D4E7006276DB /* DateFormatter.swift in Sources */,
+				88A056052335D534006276DB /* String+toDate.swift in Sources */,
 				8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */,
 				8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */,
+				88A056072335D703006276DB /* UICollectionView+DequeueReusable.swift in Sources */,
 				8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */,
 				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
 				8809E5622335B34D006624A8 /* Result.swift in Sources */,
+				88A055FC2335CC40006276DB /* UICollectionViewCell+Identifier.swift in Sources */,
+				88A615052335C8D300B55279 /* String+Localize.swift in Sources */,
 				88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */,
+				88A055F82335CBFA006276DB /* CouponCell.swift in Sources */,
 				8809E5662335B532006624A8 /* CouponListController.swift in Sources */,
 				8809E5642335B398006624A8 /* Coupon.swift in Sources */,
+				88A056002335D3F6006276DB /* Date+toString.swift in Sources */,
+				889EDB262335E39D00A06F9A /* CouponData.swift in Sources */,
+				88A055FE2335D1E4006276DB /* Int+CommaSepareted.swift in Sources */,
 				88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */,
+				88A055F52335CAA1006276DB /* CouponListProvider.swift in Sources */,
+				88A056092335D958006276DB /* UICollectionReusableView+Identifier.swift in Sources */,
+				88A0560B2335D9E1006276DB /* UICollectionView+Registable.swift in Sources */,
 				8809E55E2335B247006624A8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.devwill.STV-Coupon";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "STVクーポン";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,7 +608,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.devwill.STV-Coupon";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "STVクーポン";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

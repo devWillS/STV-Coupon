@@ -14,10 +14,18 @@ final class CouponEntityDao {
     static let dao = RealmDaoHelper<CouponEntity>()
     
     static func add(objects: [Coupon]) {
+        let keys = objects.map { $0.couponID }
+
+        // すでに保存されているRealmモデルを取得して、そのprimaryKeyのSetを得る
+        let storedKeys = Set(
+            dao.findAll().filter("couponID IN %@", keys).map { $0.couponID })
+
+        // すでに保存されているRealmモデルのprimaryKeyに一致しないオブジェクトを選択する
+        let newObjects = objects.filter { !storedKeys.contains($0.couponID) }
         
         var couponList = [CouponEntity]()
         
-        for object in objects {
+        for object in newObjects {
             let coupon = CouponEntity(coupon: object)
             couponList.append(coupon)
         }
@@ -32,23 +40,28 @@ final class CouponEntityDao {
         dao.add(object: coupon)
     }
     
+    static func update(object: CouponData) {
+        
+        dao.update(object: CouponEntity( coupon: object))
+    }
+    
     static func deleteAll() {
         dao.deleteAll()
     }
     
-    static func findByID(couponID: Int) -> CouponEntity? {
+    static func findByID(couponID: Int) -> CouponData? {
         guard let object = dao.findFirst(key: couponID as AnyObject) else {
             return nil
         }
-        return object
+        return CouponData(coupon: object)
     }
     
-    static func findAll() -> [CouponEntity] {
+    static func findAll() -> [CouponData] {
         
-        var couponList = [CouponEntity]()
+        var couponList = [CouponData]()
         
         for object in dao.findAll() {
-            let coupon = object
+            let coupon = CouponData(coupon: object)
             couponList.append(coupon)
         }
         return couponList

@@ -8,8 +8,14 @@
 
 import Foundation
 
+protocol CouponListControllerDelegate: class {
+    func deliveredCouponList(couponList: [CouponData])
+}
+
 class CouponListController{
     private var api = APIClient()
+    
+    weak var delegate: CouponListControllerDelegate?
     
     func fetchCoupons() {
         api.fetchCoupons(endPoint: "/couponList") { (result) in
@@ -17,7 +23,7 @@ class CouponListController{
             case .success(let data):
                 self.save(data: data)
             case .failure(let error):
-                break
+                self.deliverCouponList()
             }
         }
     }
@@ -27,6 +33,17 @@ class CouponListController{
         guard let couponResult: CouponResult = try? decoder.decode(CouponResult.self, from: data) else {
             return
         }
-        CouponEntityDao.add(objects: couponResult.couponList)
+        
+        if couponResult.returnCode == "0000" {
+            CouponEntityDao.add(objects: couponResult.couponList)
+            deliverCouponList()
+        } else {
+            deliverCouponList()
+        }
+    }
+    
+    private func deliverCouponList() {
+        let couponList = CouponEntityDao.findAll()
+        delegate?.deliveredCouponList(couponList: couponList)
     }
 }
