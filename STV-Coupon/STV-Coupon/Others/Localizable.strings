@@ -7,7 +7,7 @@
 */
 
 "titleLabelText" = "クーポン一覧";
-"priceDownText" = "¥ %@ OFF";
+"priceDownText" = "¥ %@ OFF\nCOUPON";
 "expiredTitleText" = "有効期限";
 "expiredTitleUsedText" = "利用済み";
 "noCouponText" = "現在ご利用できるクーポンはがありません。";
@@ -18,4 +18,3 @@
 "useButtonText" = "使う";
 "dontUseNowButtonText" = "今は使わない";
 "descriptionLabelText" = "■使うボタンについて\n店員にクーポン画面をお見せください。\n\n「使う」ボタンは使用回数が一度きりのクーポンですので、店員に見せるまで使用しないでください。\n\n■注意事項\n他フェア、サービスとの併用は不可となります。\n\n■利用条件\n有効期限内に、1回のみクーポンを使用できます。\n";
-"couponNameText" = "¥ %@ OFF COUPON";

@@ -106,10 +106,12 @@ extension CouponDetailViewController {
     
     private func setCoupon() {
         isDescriptionViewHidden = true
-        coupontTilteLabel.text = "couponNameText".localized(parameter: coupon.priceDown.commaSeparated())
+        coupontTilteLabel.text = "priceDownText".localized(parameter: coupon.priceDown.commaSeparated())
         
         if coupon.used.isEmpty {
-            useView.isHidden = false
+            descriptionView.isHidden = false
+            
+            expiredTitleLabel.textAlignment = .left
             expiredTitleLabel.text = "expiredTitleText".localized()
             expiredTitleLabel.font = UIFont.systemFont(ofSize: expiredTitleLabel.font.pointSize)
             
@@ -117,7 +119,9 @@ extension CouponDetailViewController {
             expiredLabel.font = UIFont.boldSystemFont(ofSize: expiredTitleLabel.font.pointSize)
 
         } else {
-            useView.isHidden = true
+            descriptionView.isHidden = true
+            
+            expiredTitleLabel.textAlignment = .center
             expiredTitleLabel.text = "expiredTitleUsedText".localized()
             expiredTitleLabel.font = UIFont.boldSystemFont(ofSize: expiredTitleLabel.font.pointSize)
             
