@@ -12,8 +12,8 @@
 "expiredTitleUsedText" = "利用済み";
 "noCouponText" = "現在ご利用できるクーポンはがありません。";
 
-"confirmTitleLabelText" = "お使いになる前のご確認と表示する";
-"confirmMessageLabelText" = "本当に使いますか？と表示する";
+"confirmTitleLabelText" = "お使いになる前のご確認";
+"confirmMessageLabelText" = "本当に使いますか？";
 "confirmDescriptionLabelText" = "クーポン表示後、期限をすぎると使用できなくなります。お使いになる前に、今一度、注意事項をご確認ください。\n※「使う」をタップすると取り消しできません。";
 "useButtonText" = "使う";
 "dontUseNowButtonText" = "今は使わない";
