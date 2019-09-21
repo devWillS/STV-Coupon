@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-6B-KJu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="xU1-gs-K7G"/>
+                                    <constraint firstAttribute="height" constant="60" id="xU1-gs-K7G"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" name="Theme"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-AJ-aTe">
-                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="792"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJg-na-4W2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -62,7 +62,7 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zwL-fs-XZh">
-                                        <rect key="frame" x="0.0" y="65" width="414" height="747"/>
+                                        <rect key="frame" x="0.0" y="65" width="414" height="727"/>
                                         <color key="backgroundColor" name="ListBackground"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XhB-Ep-zhT">
                                             <size key="itemSize" width="50" height="50"/>
