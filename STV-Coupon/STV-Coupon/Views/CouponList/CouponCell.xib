@@ -79,17 +79,44 @@ COUPON</string>
                                     <action selector="tappedWishButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7dO-iM-Z8F"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-iv-r79">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enC-LF-JDN">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                                        <color key="backgroundColor" name="UsedCoupon"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-Fv-bDD">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="75"/>
+                                        <color key="backgroundColor" name="UsedCoupon"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="enC-LF-JDN" firstAttribute="top" secondItem="aeS-iv-r79" secondAttribute="top" id="43Q-de-ds1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ceo-Fv-bDD" secondAttribute="bottom" id="DtK-62-7Cx"/>
+                                    <constraint firstItem="enC-LF-JDN" firstAttribute="leading" secondItem="aeS-iv-r79" secondAttribute="leading" id="Hbh-7h-98o"/>
+                                    <constraint firstAttribute="trailing" secondItem="enC-LF-JDN" secondAttribute="trailing" id="NOR-ZD-oQj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ceo-Fv-bDD" secondAttribute="trailing" id="NZG-eL-1bX"/>
+                                    <constraint firstItem="ceo-Fv-bDD" firstAttribute="leading" secondItem="aeS-iv-r79" secondAttribute="leading" id="rje-uC-IA5"/>
+                                    <constraint firstItem="ceo-Fv-bDD" firstAttribute="top" secondItem="enC-LF-JDN" secondAttribute="bottom" id="zti-SA-dFN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XCd-20-lIP" firstAttribute="leading" secondItem="KL6-6b-FPd" secondAttribute="leading" id="5Wr-du-cHM"/>
                             <constraint firstAttribute="trailing" secondItem="XCd-20-lIP" secondAttribute="trailing" id="7Fd-qa-PA1"/>
                             <constraint firstItem="XCd-20-lIP" firstAttribute="top" secondItem="dYp-lV-EWS" secondAttribute="bottom" constant="-25" id="9aX-tR-Xdq"/>
+                            <constraint firstItem="aeS-iv-r79" firstAttribute="leading" secondItem="KL6-6b-FPd" secondAttribute="leading" id="AiM-XC-mXn"/>
                             <constraint firstItem="XCd-20-lIP" firstAttribute="top" secondItem="0Dt-b8-Vzi" secondAttribute="bottom" id="OGf-wv-DhB"/>
                             <constraint firstItem="0Dt-b8-Vzi" firstAttribute="height" secondItem="KL6-6b-FPd" secondAttribute="height" multiplier="2:3" id="UYX-IA-e4l"/>
                             <constraint firstAttribute="trailing" secondItem="0Dt-b8-Vzi" secondAttribute="trailing" id="jrg-UD-GcM"/>
+                            <constraint firstItem="aeS-iv-r79" firstAttribute="top" secondItem="KL6-6b-FPd" secondAttribute="top" id="lYe-uv-cmK"/>
+                            <constraint firstAttribute="bottom" secondItem="aeS-iv-r79" secondAttribute="bottom" id="m3Y-da-fAu"/>
                             <constraint firstItem="0Dt-b8-Vzi" firstAttribute="leading" secondItem="KL6-6b-FPd" secondAttribute="leading" id="sCS-kL-kNV"/>
+                            <constraint firstItem="enC-LF-JDN" firstAttribute="height" secondItem="0Dt-b8-Vzi" secondAttribute="height" id="sUi-Z2-OOI"/>
                             <constraint firstAttribute="bottom" secondItem="XCd-20-lIP" secondAttribute="bottom" id="uji-Nq-8co"/>
+                            <constraint firstAttribute="trailing" secondItem="aeS-iv-r79" secondAttribute="trailing" id="vxU-XG-D19"/>
                             <constraint firstAttribute="trailing" secondItem="dYp-lV-EWS" secondAttribute="trailing" constant="5" id="yU9-oj-upB"/>
                             <constraint firstItem="0Dt-b8-Vzi" firstAttribute="top" secondItem="KL6-6b-FPd" secondAttribute="top" id="zY9-DY-FbU"/>
                         </constraints>
@@ -104,10 +131,13 @@ COUPON</string>
             </constraints>
             <size key="customSize" width="263" height="209"/>
             <connections>
+                <outlet property="bottomOverlayView" destination="ceo-Fv-bDD" id="c2P-t9-hZx"/>
                 <outlet property="bottomView" destination="XCd-20-lIP" id="M9u-NU-i8N"/>
                 <outlet property="expiredLabel" destination="jZP-bJ-78O" id="Xgg-Up-AOa"/>
                 <outlet property="expiredTitleLabel" destination="OjP-0T-TeM" id="EMf-Iq-Upb"/>
+                <outlet property="overlayView" destination="aeS-iv-r79" id="hB2-ww-pu6"/>
                 <outlet property="priceDownLabel" destination="O96-uh-KSo" id="rmo-KK-hV6"/>
+                <outlet property="upperOverlayView" destination="enC-LF-JDN" id="AXk-6T-yF3"/>
                 <outlet property="upperView" destination="0Dt-b8-Vzi" id="EKJ-ya-FuG"/>
                 <outlet property="wishButton" destination="dYp-lV-EWS" id="sTR-nF-44t"/>
             </connections>
@@ -118,6 +148,9 @@ COUPON</string>
         <image name="wish" width="33" height="33"/>
         <namedColor name="Theme">
             <color red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UsedCoupon">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

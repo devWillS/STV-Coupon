@@ -154,7 +154,11 @@ extension CouponListViewController {
 
 extension CouponListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        couponDetail.coupon = dataSource.couponList[indexPath.row]
+        let coupon = dataSource.couponList[indexPath.row]
+        if !controller.checkCouponAvailable(coupon: coupon) {
+            return
+        }
+        couponDetail.coupon = coupon
         toggleCoupon()
     }
 }

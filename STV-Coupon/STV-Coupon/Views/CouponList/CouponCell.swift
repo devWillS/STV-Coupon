@@ -21,7 +21,9 @@ class CouponCell: UICollectionViewCell {
     @IBOutlet weak private var priceDownLabel: UILabel!
     @IBOutlet weak private var expiredTitleLabel: UILabel!
     @IBOutlet weak private var expiredLabel: UILabel!
-    
+    @IBOutlet weak private var overlayView: UIView!
+    @IBOutlet weak private var upperOverlayView: UIView!
+    @IBOutlet weak private var bottomOverlayView: UIView!
     
     @IBAction func tappedWishButton(_ sender: UIButton) {
         coupon.wish = !coupon.wish
@@ -46,6 +48,12 @@ extension CouponCell {
         bottomView.layer.cornerRadius = 5
         bottomView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
+        upperOverlayView.layer.cornerRadius = 20
+        upperOverlayView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        bottomOverlayView.layer.cornerRadius = 5
+        bottomOverlayView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
         priceDownLabel.text = ""
         expiredTitleLabel.text = ""
         expiredLabel.text = ""
@@ -57,6 +65,8 @@ extension CouponCell {
     
     private func setCoupon() {
         priceDownLabel.text = "priceDownText".localized(parameter: coupon.priceDown.commaSeparated())
+        
+        overlayView.isHidden = coupon.used.isEmpty
         
         if coupon.used.isEmpty {
             expiredTitleLabel.text = "expiredTitleText".localized()
