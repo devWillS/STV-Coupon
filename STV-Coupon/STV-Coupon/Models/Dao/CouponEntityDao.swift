@@ -15,11 +15,11 @@ final class CouponEntityDao {
     
     static func add(objects: [Coupon]) {
         let keys = objects.map { $0.couponID }
-
+        
         // すでに保存されているRealmモデルを取得して、そのprimaryKeyのSetを得る
         let storedKeys = Set(
             dao.findAll().filter("couponID IN %@", keys).map { $0.couponID })
-
+        
         // すでに保存されているRealmモデルのprimaryKeyに一致しないオブジェクトを選択する
         let newObjects = objects.filter { !storedKeys.contains($0.couponID) }
         
@@ -59,8 +59,13 @@ final class CouponEntityDao {
     static func findAll() -> [CouponData] {
         
         var couponList = [CouponData]()
+        let sortProperties = [
+            SortDescriptor(keyPath: "fromExpire", ascending: true),
+            SortDescriptor(keyPath: "priceDown", ascending: true)
+        ]
+        let coupons = dao.findAll().sorted(by: sortProperties)
         
-        for object in dao.findAll() {
+        for object in coupons {
             let coupon = CouponData(coupon: object)
             couponList.append(coupon)
         }

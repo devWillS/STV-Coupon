@@ -17,4 +17,8 @@ extension UIColor {
     class var themeTransculed: UIColor {
         return UIColor(named: "ThemeTransculed")!
     }
+    
+    class var usedCoupon: UIColor {
+        return UIColor(named: "UsedCoupon")!
+    }
 }

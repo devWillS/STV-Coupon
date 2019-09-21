@@ -32,6 +32,12 @@ class CouponListController{
         return CouponEntityDao.findAll()
     }
     
+    func checkCouponAvailable(coupon: CouponData) -> Bool {
+        let nowString = Date().toString(.yearDay)
+        
+        return nowString > coupon.fromExpire && nowString < coupon.toExpire
+    }
+    
     private func save(data: Data) {
         let decoder = JSONDecoder()
         guard let couponResult: CouponResult = try? decoder.decode(CouponResult.self, from: data) else {
