@@ -27,5 +27,6 @@ class CouponListController{
         guard let couponResult: CouponResult = try? decoder.decode(CouponResult.self, from: data) else {
             return
         }
+        CouponEntityDao.add(objects: couponResult.couponList)
     }
 }

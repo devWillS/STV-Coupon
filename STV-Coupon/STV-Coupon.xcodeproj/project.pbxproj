@@ -17,6 +17,8 @@
 		8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E56B2335B7F6006624A8 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8809E5812335BEC9006624A8 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8809E5802335BEC9006624A8 /* Color.xcassets */; };
 		8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */; };
+		8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5872335C35A006624A8 /* CouponEntityDao.swift */; };
+		8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E58A2335C38D006624A8 /* CouponEntity.swift */; };
 		88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A822335ADC400A67518 /* AppDelegate.swift */; };
 		88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A892335ADCA00A67518 /* Assets.xcassets */; };
 		88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		8809E56B2335B7F6006624A8 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		8809E5802335BEC9006624A8 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		8809E5872335C35A006624A8 /* CouponEntityDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntityDao.swift; sourceTree = "<group>"; };
+		8809E58A2335C38D006624A8 /* CouponEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntity.swift; sourceTree = "<group>"; };
 		88A85A7F2335ADC400A67518 /* STV-Coupon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STV-Coupon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A85A822335ADC400A67518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A85A892335ADCA00A67518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 		8809E55C2335B239006624A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8809E5862335C336006624A8 /* Dao */,
 				8809E55F2335B31E006624A8 /* API */,
 				8809E5602335B330006624A8 /* Coupon */,
 			);
@@ -123,6 +128,22 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		8809E5862335C336006624A8 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				8809E5872335C35A006624A8 /* CouponEntityDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		8809E5892335C375006624A8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8809E58A2335C38D006624A8 /* CouponEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		88A85A762335ADC400A67518 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +164,7 @@
 		88A85A812335ADC400A67518 /* STV-Coupon */ = {
 			isa = PBXGroup;
 			children = (
+				8809E5892335C375006624A8 /* Entities */,
 				88A85A952335AEEE00A67518 /* Controllers */,
 				8809E5822335BFDB006624A8 /* Extensions */,
 				88A85AA42335B1DC00A67518 /* Helpers */,
@@ -306,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */,
 				8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */,
+				8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */,
 				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
 				8809E5622335B34D006624A8 /* Result.swift in Sources */,
 				88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */,
