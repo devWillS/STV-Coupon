@@ -9,11 +9,12 @@
 import UIKit
 
 class CouponListViewController: UIViewController {
+    var controller: CouponListController = CouponListController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        controller.fetchCoupons()
     }
     
 

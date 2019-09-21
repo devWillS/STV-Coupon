@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8809E55E2335B247006624A8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E55D2335B247006624A8 /* APIClient.swift */; };
+		8809E5622335B34D006624A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5612335B34D006624A8 /* Result.swift */; };
+		8809E5642335B398006624A8 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5632335B398006624A8 /* Coupon.swift */; };
+		8809E5662335B532006624A8 /* CouponListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5652335B532006624A8 /* CouponListController.swift */; };
+		8809E5682335B7DE006624A8 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */; };
+		8809E5692335B7DE006624A8 /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8809E56C2335B7F6006624A8 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E56B2335B7F6006624A8 /* XCGLogger.framework */; };
+		8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E56B2335B7F6006624A8 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8809E5812335BEC9006624A8 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8809E5802335BEC9006624A8 /* Color.xcassets */; };
+		8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */; };
 		88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A822335ADC400A67518 /* AppDelegate.swift */; };
 		88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A892335ADCA00A67518 /* Assets.xcassets */; };
 		88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */; };
@@ -15,9 +25,33 @@
 		88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9E2335AFEE00A67518 /* Realm.framework */; };
 		88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9F2335AFEE00A67518 /* RealmSwift.framework */; };
 		88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85AA02335AFEE00A67518 /* Alamofire.framework */; };
+		88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8809E56A2335B7DE006624A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8809E5692335B7DE006624A8 /* ObjcExceptionBridging.framework in Embed Frameworks */,
+				8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8809E55D2335B247006624A8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8809E5612335B34D006624A8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8809E5632335B398006624A8 /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
+		8809E5652335B532006624A8 /* CouponListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListController.swift; sourceTree = "<group>"; };
+		8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		8809E56B2335B7F6006624A8 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		8809E5802335BEC9006624A8 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		88A85A7F2335ADC400A67518 /* STV-Coupon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STV-Coupon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A85A822335ADC400A67518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A85A892335ADCA00A67518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +62,7 @@
 		88A85A9E2335AFEE00A67518 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		88A85A9F2335AFEE00A67518 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		88A85AA02335AFEE00A67518 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8809E56C2335B7F6006624A8 /* XCGLogger.framework in Frameworks */,
 				88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */,
 				88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */,
+				8809E5682335B7DE006624A8 /* ObjcExceptionBridging.framework in Frameworks */,
 				88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,12 +81,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8809E55C2335B239006624A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8809E55F2335B31E006624A8 /* API */,
+				8809E5602335B330006624A8 /* Coupon */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8809E55F2335B31E006624A8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8809E55D2335B247006624A8 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8809E5602335B330006624A8 /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				8809E5632335B398006624A8 /* Coupon.swift */,
+				8809E5612335B34D006624A8 /* Result.swift */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		8809E5822335BFDB006624A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8809E5832335BFE3006624A8 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8809E5832335BFE3006624A8 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		88A85A762335ADC400A67518 = {
 			isa = PBXGroup;
 			children = (
-				88A85A812335ADC400A67518 /* STV-Coupon */,
-				88A85A802335ADC400A67518 /* Products */,
 				88A85A9D2335AFEE00A67518 /* Frameworks */,
+				88A85A802335ADC400A67518 /* Products */,
+				88A85A812335ADC400A67518 /* STV-Coupon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				88A85A952335AEEE00A67518 /* Controllers */,
+				8809E5822335BFDB006624A8 /* Extensions */,
+				88A85AA42335B1DC00A67518 /* Helpers */,
+				8809E55C2335B239006624A8 /* Models */,
 				88A85A942335AED600A67518 /* Others */,
 			);
 			path = "STV-Coupon";
@@ -75,6 +157,7 @@
 			children = (
 				88A85A822335ADC400A67518 /* AppDelegate.swift */,
 				88A85A892335ADCA00A67518 /* Assets.xcassets */,
+				8809E5802335BEC9006624A8 /* Color.xcassets */,
 				88A85A8E2335ADCA00A67518 /* Info.plist */,
 			);
 			path = Others;
@@ -101,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				88A85A982335AF3B00A67518 /* CouponList.storyboard */,
+				8809E5652335B532006624A8 /* CouponListController.swift */,
 				88A85A9A2335AF5600A67518 /* CouponListViewController.swift */,
 			);
 			path = CoupnList;
@@ -109,11 +193,21 @@
 		88A85A9D2335AFEE00A67518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8809E56B2335B7F6006624A8 /* XCGLogger.framework */,
+				8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */,
 				88A85AA02335AFEE00A67518 /* Alamofire.framework */,
 				88A85A9E2335AFEE00A67518 /* Realm.framework */,
 				88A85A9F2335AFEE00A67518 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88A85AA42335B1DC00A67518 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +221,7 @@
 				88A85A7C2335ADC400A67518 /* Frameworks */,
 				88A85A7D2335ADC400A67518 /* Resources */,
 				88A85A9C2335AFA000A67518 /* Carthage */,
+				8809E56A2335B7DE006624A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */,
+				8809E5812335BEC9006624A8 /* Color.xcassets in Resources */,
 				88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */,
 				88A85A8A2335ADCA00A67518 /* Assets.xcassets in Resources */,
 			);
@@ -189,16 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
 			);
 			name = Carthage;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */,
 				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
+				8809E5622335B34D006624A8 /* Result.swift in Sources */,
 				88A85A832335ADC400A67518 /* AppDelegate.swift in Sources */,
+				8809E5662335B532006624A8 /* CouponListController.swift in Sources */,
+				8809E5642335B398006624A8 /* Coupon.swift in Sources */,
+				88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */,
+				8809E55E2335B247006624A8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +326,7 @@
 				88A85A8C2335ADCA00A67518 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,6 +459,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/STV-Coupon/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +482,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/STV-Coupon/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
