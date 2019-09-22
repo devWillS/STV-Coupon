@@ -44,14 +44,14 @@ class CouponListViewController: UIViewController {
 ///Private Method
 extension CouponListViewController {
     private func setupView() {
-        titleLabel.text = "titleLabelText".localized()
+        titleLabel.text = R.string.localizable.titleLabelText()
         
         couponListCollectionView.dataSource = dataSource
         couponListCollectionView.delegate = self
         CouponCell.register(collectionView: couponListCollectionView)
         
         noCouponView.isHidden = true
-        noCouponLabel.text = "noCouponText".localized()
+        noCouponLabel.text = R.string.localizable.noCouponText()
     }
     
     private func setupCouponDetail() {
@@ -59,9 +59,7 @@ extension CouponListViewController {
         overlayView.alpha = 0.0
         self.navigationController?.view.addSubview(overlayView)
         
-        // menuViewControllerの設定
-        let menuStoryboard = UIStoryboard(name: "CouponDetail", bundle: nil)
-        couponDetail = menuStoryboard.instantiateViewController(withIdentifier: "CouponDetailViewController") as! CouponDetailViewController
+        couponDetail = R.storyboard.couponDetail().instantiateInitialViewController() as! CouponDetailViewController
         self.couponDetail.view.frame = CGRect(x: 0, y: self.view.bounds.height, width:self.view.bounds.width, height: UIScreen.main.bounds.height)
         self.view.addSubview(self.couponDetail.view)
         self.couponDetail.delegate = self

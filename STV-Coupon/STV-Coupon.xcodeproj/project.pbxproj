@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,14 +11,13 @@
 		8809E5622335B34D006624A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5612335B34D006624A8 /* Result.swift */; };
 		8809E5642335B398006624A8 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5632335B398006624A8 /* Coupon.swift */; };
 		8809E5662335B532006624A8 /* CouponListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5652335B532006624A8 /* CouponListController.swift */; };
-		8809E5682335B7DE006624A8 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */; };
-		8809E5692335B7DE006624A8 /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8809E56C2335B7F6006624A8 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E56B2335B7F6006624A8 /* XCGLogger.framework */; };
-		8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8809E56B2335B7F6006624A8 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8809E5812335BEC9006624A8 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8809E5802335BEC9006624A8 /* Color.xcassets */; };
 		8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */; };
 		8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E5872335C35A006624A8 /* CouponEntityDao.swift */; };
 		8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E58A2335C38D006624A8 /* CouponEntity.swift */; };
+		887022BE2337C04F00147B9D /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887022BD2337C04F00147B9D /* Rswift.framework */; };
+		887022BF2337C04F00147B9D /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 887022BD2337C04F00147B9D /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		887022C12337C3B000147B9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887022C02337C3B000147B9D /* R.generated.swift */; };
 		889EDB262335E39D00A06F9A /* CouponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EDB252335E39D00A06F9A /* CouponData.swift */; };
 		889EDB292335EC2B00A06F9A /* CouponDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889EDB282335EC2B00A06F9A /* CouponDetail.storyboard */; };
 		889EDB2B2335EC4900A06F9A /* CouponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EDB2A2335EC4900A06F9A /* CouponDetailViewController.swift */; };
@@ -40,11 +39,12 @@
 		88A85A8D2335ADCA00A67518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A8B2335ADCA00A67518 /* LaunchScreen.storyboard */; };
 		88A85A992335AF3B00A67518 /* CouponList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A85A982335AF3B00A67518 /* CouponList.storyboard */; };
 		88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85A9A2335AF5600A67518 /* CouponListViewController.swift */; };
-		88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9E2335AFEE00A67518 /* Realm.framework */; };
-		88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85A9F2335AFEE00A67518 /* RealmSwift.framework */; };
-		88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85AA02335AFEE00A67518 /* Alamofire.framework */; };
 		88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */; };
-		88B63BD92336018300B8FFC0 /* UIColor+Original.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B63BD82336018300B8FFC0 /* UIColor+Original.swift */; };
+		88B5EC382337B3240073C35C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88B5EC372337B3240073C35C /* Alamofire */; };
+		88B5EC3B2337B3840073C35C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 88B5EC3A2337B3840073C35C /* Realm */; };
+		88B5EC3D2337B3840073C35C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88B5EC3C2337B3840073C35C /* RealmSwift */; };
+		88B5EC402337B3C20073C35C /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 88B5EC3F2337B3C20073C35C /* ObjcExceptionBridging */; };
+		88B5EC422337B3C20073C35C /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 88B5EC412337B3C20073C35C /* XCGLogger */; };
 		88B99FEF2337022400243199 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B99FEE2337022400243199 /* SVProgressHUD.framework */; };
 		88B99FF02337022400243199 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88B99FEE2337022400243199 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -57,8 +57,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				88B99FF02337022400243199 /* SVProgressHUD.framework in Embed Frameworks */,
-				8809E5692335B7DE006624A8 /* ObjcExceptionBridging.framework in Embed Frameworks */,
-				8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */,
+				887022BF2337C04F00147B9D /* Rswift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +75,8 @@
 		8809E5842335BFEA006624A8 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		8809E5872335C35A006624A8 /* CouponEntityDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntityDao.swift; sourceTree = "<group>"; };
 		8809E58A2335C38D006624A8 /* CouponEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntity.swift; sourceTree = "<group>"; };
+		887022BD2337C04F00147B9D /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		887022C02337C3B000147B9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		889EDB252335E39D00A06F9A /* CouponData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponData.swift; sourceTree = "<group>"; };
 		889EDB282335EC2B00A06F9A /* CouponDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CouponDetail.storyboard; sourceTree = "<group>"; };
 		889EDB2A2335EC4900A06F9A /* CouponDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		88A85A9F2335AFEE00A67518 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		88A85AA02335AFEE00A67518 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
-		88B63BD82336018300B8FFC0 /* UIColor+Original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Original.swift"; sourceTree = "<group>"; };
 		88B99FEE2337022400243199 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,11 +113,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B99FEF2337022400243199 /* SVProgressHUD.framework in Frameworks */,
-				8809E56C2335B7F6006624A8 /* XCGLogger.framework in Frameworks */,
-				88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */,
-				88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */,
-				8809E5682335B7DE006624A8 /* ObjcExceptionBridging.framework in Frameworks */,
-				88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */,
+				88B5EC382337B3240073C35C /* Alamofire in Frameworks */,
+				88B5EC422337B3C20073C35C /* XCGLogger in Frameworks */,
+				88B5EC3D2337B3840073C35C /* RealmSwift in Frameworks */,
+				88B5EC3B2337B3840073C35C /* Realm in Frameworks */,
+				887022BE2337C04F00147B9D /* Rswift.framework in Frameworks */,
+				88B5EC402337B3C20073C35C /* ObjcExceptionBridging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +232,6 @@
 				88A056062335D703006276DB /* UICollectionView+DequeueReusable.swift */,
 				88A056082335D958006276DB /* UICollectionReusableView+Identifier.swift */,
 				88A0560A2335D9E1006276DB /* UICollectionView+Registable.swift */,
-				88B63BD82336018300B8FFC0 /* UIColor+Original.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -279,6 +279,7 @@
 		88A85A942335AED600A67518 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				887022C02337C3B000147B9D /* R.generated.swift */,
 				88A85A822335ADC400A67518 /* AppDelegate.swift */,
 				88A85A892335ADCA00A67518 /* Assets.xcassets */,
 				8809E5802335BEC9006624A8 /* Color.xcassets */,
@@ -319,6 +320,7 @@
 		88A85A9D2335AFEE00A67518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				887022BD2337C04F00147B9D /* Rswift.framework */,
 				88B99FEE2337022400243199 /* SVProgressHUD.framework */,
 				8809E56B2335B7F6006624A8 /* XCGLogger.framework */,
 				8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */,
@@ -344,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88A85A912335ADCA00A67518 /* Build configuration list for PBXNativeTarget "STV-Coupon" */;
 			buildPhases = (
+				887022BB2337B67600147B9D /* R.swift */,
 				88A85A7B2335ADC400A67518 /* Sources */,
 				88A85A7C2335ADC400A67518 /* Frameworks */,
 				88A85A7D2335ADC400A67518 /* Resources */,
@@ -355,6 +358,13 @@
 			dependencies = (
 			);
 			name = "STV-Coupon";
+			packageProductDependencies = (
+				88B5EC372337B3240073C35C /* Alamofire */,
+				88B5EC3A2337B3840073C35C /* Realm */,
+				88B5EC3C2337B3840073C35C /* RealmSwift */,
+				88B5EC3F2337B3C20073C35C /* ObjcExceptionBridging */,
+				88B5EC412337B3C20073C35C /* XCGLogger */,
+			);
 			productName = "STVクーポン";
 			productReference = 88A85A7F2335ADC400A67518 /* STVクーポン.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +393,11 @@
 				Base,
 			);
 			mainGroup = 88A85A762335ADC400A67518;
+			packageReferences = (
+				88B5EC362337B3240073C35C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				88B5EC392337B3840073C35C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				88B5EC3E2337B3C20073C35C /* XCRemoteSwiftPackageReference "XCGLogger" */,
+			);
 			productRefGroup = 88A85A802335ADC400A67518 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,18 +425,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		887022BB2337B67600147B9D /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/$PROJECT_NAME/Others/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"rswift\" generate \"$SRCROOT/$PROJECT_NAME/Others/R.generated.swift\"\n";
+		};
 		88A85A9C2335AFA000A67518 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -439,11 +470,11 @@
 			files = (
 				88A056032335D4E7006276DB /* DateFormatter.swift in Sources */,
 				88A056052335D534006276DB /* String+toDate.swift in Sources */,
+				887022C12337C3B000147B9D /* R.generated.swift in Sources */,
 				8809E58B2335C38D006624A8 /* CouponEntity.swift in Sources */,
 				8809E5852335BFEA006624A8 /* Dictionary+JSON.swift in Sources */,
 				88A056072335D703006276DB /* UICollectionView+DequeueReusable.swift in Sources */,
 				8809E5882335C35B006624A8 /* CouponEntityDao.swift in Sources */,
-				88B63BD92336018300B8FFC0 /* UIColor+Original.swift in Sources */,
 				88A85A9B2335AF5600A67518 /* CouponListViewController.swift in Sources */,
 				8809E5622335B34D006624A8 /* Result.swift in Sources */,
 				88A055FC2335CC40006276DB /* UICollectionViewCell+Identifier.swift in Sources */,
@@ -663,6 +694,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88B5EC362337B3240073C35C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 4.9.0;
+			};
+		};
+		88B5EC392337B3840073C35C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = exactVersion;
+				version = 3.18.0;
+			};
+		};
+		88B5EC3E2337B3C20073C35C /* XCRemoteSwiftPackageReference "XCGLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaveWoodCom/XCGLogger";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88B5EC372337B3240073C35C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B5EC362337B3240073C35C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		88B5EC3A2337B3840073C35C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B5EC392337B3840073C35C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		88B5EC3C2337B3840073C35C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B5EC392337B3840073C35C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		88B5EC3F2337B3C20073C35C /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B5EC3E2337B3C20073C35C /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		88B5EC412337B3C20073C35C /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B5EC3E2337B3C20073C35C /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88A85A772335ADC400A67518 /* Project object */;
 }

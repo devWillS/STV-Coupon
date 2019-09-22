@@ -28,7 +28,7 @@ class CouponDetailViewController: UIViewController {
             dontUseNowView.isHidden = isDescriptionViewHidden
             
             if isDescriptionViewHidden {
-                descriptionView.backgroundColor = .themeTransculed
+                descriptionView.backgroundColor = R.color.themeTransculed()
             } else {
                 if #available(iOS 13.0, *) {
                     descriptionView.backgroundColor = .systemBackground
@@ -87,16 +87,16 @@ extension CouponDetailViewController {
         confirmMessageLabel.layer.borderWidth = 1
         confirmMessageLabel.layer.cornerRadius = 10
         
-        confirmTitleLabel.text = "confirmTitleLabelText".localized()
-        confirmMessageLabel.text = "confirmMessageLabelText".localized()
-        confirmDescriptionLabel.text = "confirmDescriptionLabelText".localized()
+        confirmTitleLabel.text = R.string.localizable.confirmTitleLabelText()
+        confirmMessageLabel.text = R.string.localizable.confirmMessageLabelText()
+        confirmDescriptionLabel.text = R.string.localizable.confirmDescriptionLabelText()
         
         
         useButton.layer.cornerRadius = 10
-        useButton.setTitle("useButtonText".localized(), for: .normal)
-        dontUseNowButton.setTitle("dontUseNowButtonText".localized(), for: .normal)
+        useButton.setTitle(R.string.localizable.useButtonText(), for: .normal)
+        dontUseNowButton.setTitle(R.string.localizable.dontUseNowButtonText(), for: .normal)
         
-        descriptionLabel.text = "descriptionLabelText".localized()
+        descriptionLabel.text = R.string.localizable.descriptionLabelText()
         
         isDescriptionViewHidden = true
     }
@@ -110,13 +110,13 @@ extension CouponDetailViewController {
     
     private func setCoupon() {
         isDescriptionViewHidden = true
-        coupontTilteLabel.text = "priceDownText".localized(parameter: coupon.priceDown.commaSeparated())
+        coupontTilteLabel.text = R.string.localizable.priceDownText(coupon.priceDown.commaSeparated())
         
         if coupon.used.isEmpty {
             descriptionView.isHidden = false
             
             expiredTitleLabel.textAlignment = .left
-            expiredTitleLabel.text = "expiredTitleText".localized()
+            expiredTitleLabel.text = R.string.localizable.expiredTitleText()
             expiredTitleLabel.font = UIFont.systemFont(ofSize: expiredTitleLabel.font.pointSize)
             
             expiredLabel.text = coupon.getExpiredDateString()
@@ -126,7 +126,7 @@ extension CouponDetailViewController {
             descriptionView.isHidden = true
             
             expiredTitleLabel.textAlignment = .center
-            expiredTitleLabel.text = "expiredTitleUsedText".localized()
+            expiredTitleLabel.text = R.string.localizable.expiredTitleUsedText()
             expiredTitleLabel.font = UIFont.boldSystemFont(ofSize: expiredTitleLabel.font.pointSize)
             
             expiredLabel.text = coupon.used

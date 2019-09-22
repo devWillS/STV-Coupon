@@ -64,12 +64,12 @@ extension CouponCell {
     }
     
     private func setCoupon() {
-        priceDownLabel.text = "priceDownText".localized(parameter: coupon.priceDown.commaSeparated())
+        priceDownLabel.text = R.string.localizable.priceDownText(coupon.priceDown.commaSeparated())
         
         overlayView.isHidden = coupon.used.isEmpty
         
         if coupon.used.isEmpty {
-            expiredTitleLabel.text = "expiredTitleText".localized()
+            expiredTitleLabel.text = R.string.localizable.expiredTitleText()
             expiredTitleLabel.font = UIFont.systemFont(ofSize: expiredTitleLabel.font.pointSize)
             
             expiredLabel.text = coupon.getExpiredDateString()
@@ -77,7 +77,7 @@ extension CouponCell {
 
         } else {
             
-            expiredTitleLabel.text = "expiredTitleUsedText".localized()
+            expiredTitleLabel.text = R.string.localizable.expiredTitleUsedText()
             expiredTitleLabel.font = UIFont.boldSystemFont(ofSize: expiredTitleLabel.font.pointSize)
             
             expiredLabel.text = coupon.used
@@ -88,11 +88,11 @@ extension CouponCell {
     }
     
     private func setWishButttonImage() {
-        var image: UIImage
+        var image: UIImage?
         if coupon.wish {
-            image = #imageLiteral(resourceName: "unwish")
+            image = R.image.unwish()
         } else {
-            image = #imageLiteral(resourceName: "wish")
+            image = R.image.wish()
             if #available(iOS 13.0, *) {
                 wishButton.tintColor = .label
             } else {
