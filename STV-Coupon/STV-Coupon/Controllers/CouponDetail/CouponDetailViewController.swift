@@ -30,7 +30,11 @@ class CouponDetailViewController: UIViewController {
             if isDescriptionViewHidden {
                 descriptionView.backgroundColor = .themeTransculed
             } else {
-                descriptionView.backgroundColor = .white
+                if #available(iOS 13.0, *) {
+                    descriptionView.backgroundColor = .systemBackground
+                } else {
+                    descriptionView.backgroundColor = .white
+                }
             }
         }
     }

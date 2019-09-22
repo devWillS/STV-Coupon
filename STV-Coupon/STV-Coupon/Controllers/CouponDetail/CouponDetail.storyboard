@@ -151,7 +151,7 @@ COUPON</string>
                                                                                     <constraint firstAttribute="height" constant="50" id="qTk-cV-EQM"/>
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button">
-                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                 </state>
                                                                                 <connections>
                                                                                     <action selector="tappedDontUseNowButton:" destination="VKg-bq-z5a" eventType="touchUpInside" id="ACL-Cq-SWq"/>
@@ -169,7 +169,7 @@ COUPON</string>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="5xD-ib-chp" secondAttribute="trailing" id="Axk-is-kbE"/>
                                                             <constraint firstItem="5xD-ib-chp" firstAttribute="leading" secondItem="UyI-LZ-NlC" secondAttribute="leading" id="Cxk-lP-E2X"/>
