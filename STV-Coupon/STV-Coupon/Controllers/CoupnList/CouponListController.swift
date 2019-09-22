@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 protocol CouponListControllerDelegate: class {
     func deliveredCouponList(couponList: [CouponData])
@@ -18,6 +19,7 @@ class CouponListController{
     weak var delegate: CouponListControllerDelegate?
     
     func fetchCoupons() {
+        SVProgressHUD.show()
         api.fetchCoupons(endPoint: "/couponList") { (result) in
             switch result {
             case .success(let data):
@@ -25,6 +27,7 @@ class CouponListController{
             case .failure(let error):
                 self.deliverCouponList()
             }
+            SVProgressHUD.dismiss()
         }
     }
     

@@ -45,6 +45,8 @@
 		88A85AA32335AFEE00A67518 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A85AA02335AFEE00A67518 /* Alamofire.framework */; };
 		88A85AA62335B1EF00A67518 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */; };
 		88B63BD92336018300B8FFC0 /* UIColor+Original.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B63BD82336018300B8FFC0 /* UIColor+Original.swift */; };
+		88B99FEF2337022400243199 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B99FEE2337022400243199 /* SVProgressHUD.framework */; };
+		88B99FF02337022400243199 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88B99FEE2337022400243199 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				88B99FF02337022400243199 /* SVProgressHUD.framework in Embed Frameworks */,
 				8809E5692335B7DE006624A8 /* ObjcExceptionBridging.framework in Embed Frameworks */,
 				8809E56D2335B7F6006624A8 /* XCGLogger.framework in Embed Frameworks */,
 			);
@@ -101,6 +104,7 @@
 		88A85AA02335AFEE00A67518 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		88A85AA52335B1EF00A67518 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
 		88B63BD82336018300B8FFC0 /* UIColor+Original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Original.swift"; sourceTree = "<group>"; };
+		88B99FEE2337022400243199 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B99FEF2337022400243199 /* SVProgressHUD.framework in Frameworks */,
 				8809E56C2335B7F6006624A8 /* XCGLogger.framework in Frameworks */,
 				88A85AA12335AFEE00A67518 /* Realm.framework in Frameworks */,
 				88A85AA22335AFEE00A67518 /* RealmSwift.framework in Frameworks */,
@@ -314,6 +319,7 @@
 		88A85A9D2335AFEE00A67518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88B99FEE2337022400243199 /* SVProgressHUD.framework */,
 				8809E56B2335B7F6006624A8 /* XCGLogger.framework */,
 				8809E5672335B7DE006624A8 /* ObjcExceptionBridging.framework */,
 				88A85AA02335AFEE00A67518 /* Alamofire.framework */,
@@ -415,6 +421,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			name = Carthage;
 			outputPaths = (
