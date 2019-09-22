@@ -93,6 +93,11 @@ extension CouponCell {
             image = #imageLiteral(resourceName: "unwish")
         } else {
             image = #imageLiteral(resourceName: "wish")
+            if #available(iOS 13.0, *) {
+                wishButton.tintColor = .label
+            } else {
+                wishButton.tintColor = .black
+            }
         }
         wishButton.setImage(image, for: .normal)
     }
